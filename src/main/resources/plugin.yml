@@ -1,0 +1,8 @@
+name: CWT_v3
+version: ${project.version}
+main: me.t0c.cwt_v3.CWT_v3
+api-version: 1.13
+commands:
+  CWT:
+    permission: op
+    usage: /<command> [config|newCategory|newTrade|newTrader|editTrades]

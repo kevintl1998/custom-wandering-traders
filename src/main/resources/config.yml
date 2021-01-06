@@ -1,0 +1,23 @@
+
+
+mixedTraderMinTrades: 1
+mixedTraderMaxTrades: 10
+
+removeLlamasOnTraderDespawn: true
+despawnTimer: 20
+
+preventDuplicateTrades: false
+
+mixTraderCategories: true
+keepDefaultTrades: true
+
+broadcastTraderSpawn: false
+leakTraderCoords: false
+
+appendTradesOrCustom: 'custom'
+combineDefaultAndCustom: false
+
+defaultTradesAmount: 6
+defaultCategoryWeight: 10
+defaultCategoryMinTrades: 6
+defaultCategoryMaxTrades: 6
