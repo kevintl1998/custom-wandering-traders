@@ -1,9 +1,9 @@
-package me.t0c.cwt_v3.commands.newTrade.inventory;
+package me.t0c.cwt_v3.command.newTrade.inventory;
 
 import me.t0c.cwt_v3.CWT_v3;
-import me.t0c.cwt_v3.tradesStorage.Category;
-import me.t0c.cwt_v3.tradesStorage.MerchantTrade;
-import me.t0c.cwt_v3.tradesStorage.TradeItem;
+import me.t0c.cwt_v3.tradestorage.Category;
+import me.t0c.cwt_v3.tradestorage.MerchantTrade;
+import me.t0c.cwt_v3.tradestorage.TradeItem;
 import me.t0c.cwt_v3.utils.traders.CategoryGenerator;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

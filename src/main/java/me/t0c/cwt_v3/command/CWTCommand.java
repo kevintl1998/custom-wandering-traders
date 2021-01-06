@@ -1,12 +1,12 @@
-package me.t0c.cwt_v3.commands;
+package me.t0c.cwt_v3.command;
 
 import me.t0c.cwt_v3.CWT_v3;
-import me.t0c.cwt_v3.commands.category.Category;
-import me.t0c.cwt_v3.commands.config.Config;
-import me.t0c.cwt_v3.commands.editTrades.EditTrades;
-import me.t0c.cwt_v3.commands.newTrade.NewTrade;
-import me.t0c.cwt_v3.commands.newTrader.NewTrader;
-import me.t0c.cwt_v3.commands.reload.Reload;
+import me.t0c.cwt_v3.command.category.Category;
+import me.t0c.cwt_v3.command.config.Config;
+import me.t0c.cwt_v3.command.editTrades.EditTrades;
+import me.t0c.cwt_v3.command.newTrade.NewTrade;
+import me.t0c.cwt_v3.command.newTrader.NewTrader;
+import me.t0c.cwt_v3.command.reload.Reload;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.*;

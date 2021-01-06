@@ -2,9 +2,9 @@ package me.t0c.cwt_v3.utils.traders;
 
 import me.t0c.cwt_v3.CWT_v3;
 import me.t0c.cwt_v3.config.Config;
-import me.t0c.cwt_v3.tradesStorage.Category;
-import me.t0c.cwt_v3.tradesStorage.CategoryTrades;
-import me.t0c.cwt_v3.tradesStorage.MerchantTrade;
+import me.t0c.cwt_v3.tradestorage.Category;
+import me.t0c.cwt_v3.tradestorage.CategoryTrades;
+import me.t0c.cwt_v3.tradestorage.MerchantTrade;
 import org.bukkit.entity.WanderingTrader;
 import org.bukkit.inventory.MerchantRecipe;
 
@@ -30,42 +30,27 @@ public class TradeListGenerator {
             if (Config.getCombineDefaultAndCustom()) {
                 if (Config.getAppendDefaultOrCustom().equals("default")) {
                     if (Config.getMixTraderCategories()) {
-                        System.out.println(0);
                         return appendTrades(getMixedRandomTradeList(getMixedTraderTradeCount()), getDefaultTradesToKeep(trader.getRecipes(), Config.getDefaultTradesAmount()));
-
                     } else {
-                        System.out.println(1);
                         return appendTrades(getRandomTradeList(new CategoryGenerator().getRandomCategory()), getDefaultTradesToKeep(trader.getRecipes(), Config.getDefaultTradesAmount()));
-
                     }
                 } else {
                     if (Config.getMixTraderCategories()) {
-                        System.out.println(2);
                         return appendTrades(getDefaultTradesToKeep(trader.getRecipes(), Config.getDefaultTradesAmount()), getMixedRandomTradeList(getMixedTraderTradeCount()));
-
                     } else {
-                        System.out.println(3);
                         return appendTrades(getDefaultTradesToKeep(trader.getRecipes(), Config.getDefaultTradesAmount()), getRandomTradeList(new CategoryGenerator().getRandomCategory()));
                     }
                 }
             } else {
-
                 if (Config.getMixTraderCategories()) {
-                    System.out.println(4);
                     return getMixedRandomTradeListWithDefault(trader.getRecipes(), getMixedTraderTradeCount());
-
                 } else {
-                    System.out.println(5);
                     return getRandomTradeListWithDefault(trader.getRecipes());
-
                 }
             }
         } else if (Config.getMixTraderCategories()) {
-            System.out.println(6);
             return getMixedRandomTradeList(getMixedTraderTradeCount());
-
         } else {
-            System.out.println(7);
             return getRandomTradeList(new CategoryGenerator().getRandomCategory());
         }
     }

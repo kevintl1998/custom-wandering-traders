@@ -1,8 +1,8 @@
-package me.t0c.cwt_v3.commands.editTrades.inventories;
+package me.t0c.cwt_v3.command.editTrades.inventories;
 
 import me.t0c.cwt_v3.CWT_v3;
-import me.t0c.cwt_v3.tradesStorage.Category;
-import me.t0c.cwt_v3.tradesStorage.MerchantTrade;
+import me.t0c.cwt_v3.tradestorage.Category;
+import me.t0c.cwt_v3.tradestorage.MerchantTrade;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;

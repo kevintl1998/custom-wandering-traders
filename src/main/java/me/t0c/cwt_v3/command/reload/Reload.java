@@ -1,9 +1,8 @@
-package me.t0c.cwt_v3.commands.reload;
+package me.t0c.cwt_v3.command.reload;
 
 import me.t0c.cwt_v3.CWT_v3;
-import me.t0c.cwt_v3.commands.Command;
+import me.t0c.cwt_v3.command.Command;
 import me.t0c.cwt_v3.config.Config;
-import me.t0c.cwt_v3.config.tradeFilesHandler.TradeFiles;
 import me.t0c.cwt_v3.utils.MessageUtils;
 import org.bukkit.entity.Player;
 

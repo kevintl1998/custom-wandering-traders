@@ -1,4 +1,4 @@
-package me.t0c.cwt_v3.bukkitRunnables;
+package me.t0c.cwt_v3.bukkitrunnables;
 
 import org.bukkit.scheduler.BukkitRunnable;
 

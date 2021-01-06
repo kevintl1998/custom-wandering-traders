@@ -1,4 +1,4 @@
-package me.t0c.cwt_v3.tradesStorage;
+package me.t0c.cwt_v3.tradestorage;
 
 import lombok.Data;
 import me.t0c.cwt_v3.CWT_v3;

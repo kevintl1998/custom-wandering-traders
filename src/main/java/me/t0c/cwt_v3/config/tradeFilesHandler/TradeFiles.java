@@ -1,10 +1,9 @@
 package me.t0c.cwt_v3.config.tradeFilesHandler;
 
 import me.t0c.cwt_v3.CWT_v3;
-import me.t0c.cwt_v3.tradesStorage.Category;
-import me.t0c.cwt_v3.tradesStorage.CategoryTrades;
+import me.t0c.cwt_v3.tradestorage.Category;
+import me.t0c.cwt_v3.tradestorage.CategoryTrades;
 import me.t0c.cwt_v3.utils.StringParser;
-import org.bukkit.entity.Cat;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.yaml.snakeyaml.Yaml;
 

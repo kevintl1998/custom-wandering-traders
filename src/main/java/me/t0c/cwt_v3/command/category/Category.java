@@ -1,7 +1,7 @@
-package me.t0c.cwt_v3.commands.category;
+package me.t0c.cwt_v3.command.category;
 
 import me.t0c.cwt_v3.CWT_v3;
-import me.t0c.cwt_v3.commands.Command;
+import me.t0c.cwt_v3.command.Command;
 import me.t0c.cwt_v3.utils.MessageUtils;
 import me.t0c.cwt_v3.utils.StringParser;
 import me.t0c.cwt_v3.utils.traders.CategoryGenerator;
@@ -61,7 +61,7 @@ public class Category extends Command {
 
     public boolean listCategories() {
         MessageUtils.sendPlayerMessage(player,"Categories:");
-        for(me.t0c.cwt_v3.tradesStorage.Category category : CWT_v3.trades.getTrades().keySet()) {
+        for(me.t0c.cwt_v3.tradestorage.Category category : CWT_v3.trades.getTrades().keySet()) {
             player.sendMessage("Name: " + ChatColor.GREEN + CWT_v3.trades.getTrades().get(category).getDisplayName() + ChatColor.RESET + " | weight: " + ChatColor.GREEN + CWT_v3.trades.getTrades().get(category).getCategoryWeight() + ChatColor.RESET + " | Trades: " + ChatColor.GREEN + CWT_v3.trades.getTrades().get(category).getTraderTrades().size());
         }
         return true;
@@ -77,7 +77,7 @@ public class Category extends Command {
             return true;
         }
 
-        me.t0c.cwt_v3.tradesStorage.Category category = CategoryGenerator.getCategoryFromDisplayName(args[2]);
+        me.t0c.cwt_v3.tradestorage.Category category = CategoryGenerator.getCategoryFromDisplayName(args[2]);
 
         if(category != null) {
 
@@ -104,7 +104,7 @@ public class Category extends Command {
         return true;
     }
 
-    private void editRemove(String[] args, me.t0c.cwt_v3.tradesStorage.Category category) {
+    private void editRemove(String[] args, me.t0c.cwt_v3.tradestorage.Category category) {
         if (args.length == 4) {
             if (CWT_v3.trades.getTrades().get(category).getTraderTrades().size() == 0) {
                 CWT_v3.trades.getTrades().remove(category);
@@ -119,7 +119,7 @@ public class Category extends Command {
         }
     }
 
-    private void editName(String[] args, me.t0c.cwt_v3.tradesStorage.Category category) {
+    private void editName(String[] args, me.t0c.cwt_v3.tradestorage.Category category) {
         if (args.length == 4) {
 
             MessageUtils.sendPlayerMessage(player, "The category " +
@@ -151,7 +151,7 @@ public class Category extends Command {
         }
     }
 
-    private void editWeight(String[] args, me.t0c.cwt_v3.tradesStorage.Category category) {
+    private void editWeight(String[] args, me.t0c.cwt_v3.tradestorage.Category category) {
         if (args.length == 4) {
 
             MessageUtils.sendPlayerMessage(player, ChatColor.GREEN + CWT_v3.trades.getTrades().get(category).getDisplayName() +
@@ -182,7 +182,7 @@ public class Category extends Command {
         }
     }
 
-    private void editMinTradeOptions(String[] args, me.t0c.cwt_v3.tradesStorage.Category category) {
+    private void editMinTradeOptions(String[] args, me.t0c.cwt_v3.tradestorage.Category category) {
         if (args.length == 4) {
 
             MessageUtils.sendPlayerMessage(player, ChatColor.GREEN + CWT_v3.trades.getTrades().get(category).getDisplayName() +
@@ -209,7 +209,7 @@ public class Category extends Command {
         } else { MessageUtils.sendPlayerMessage(player,"Syntax: /cwt category edit <name> minTradeOptions <new value>"); }
     }
 
-    private  void editMaxTradeOptions(String[] args, me.t0c.cwt_v3.tradesStorage.Category category) {
+    private  void editMaxTradeOptions(String[] args, me.t0c.cwt_v3.tradestorage.Category category) {
         if(args.length == 4) {
 
             MessageUtils.sendPlayerMessage(player, ChatColor.GREEN + CWT_v3.trades.getTrades().get(category).getDisplayName() +

@@ -1,8 +1,8 @@
-package me.t0c.cwt_v3.commands.newTrade;
+package me.t0c.cwt_v3.command.newTrade;
 
 import me.t0c.cwt_v3.CWT_v3;
-import me.t0c.cwt_v3.commands.Command;
-import me.t0c.cwt_v3.commands.newTrade.inventory.NewTradeInventory;
+import me.t0c.cwt_v3.command.Command;
+import me.t0c.cwt_v3.command.newTrade.inventory.NewTradeInventory;
 import me.t0c.cwt_v3.utils.MessageUtils;
 import me.t0c.cwt_v3.utils.StringParser;
 import me.t0c.cwt_v3.utils.traders.CategoryGenerator;

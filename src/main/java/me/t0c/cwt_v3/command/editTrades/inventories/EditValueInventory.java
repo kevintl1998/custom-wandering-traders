@@ -1,8 +1,8 @@
-package me.t0c.cwt_v3.commands.editTrades.inventories;
+package me.t0c.cwt_v3.command.editTrades.inventories;
 
-import me.t0c.cwt_v3.commands.editTrades.enumerations.TradeValues;
+import me.t0c.cwt_v3.command.editTrades.TradeValues;
 import me.t0c.cwt_v3.CWT_v3;
-import me.t0c.cwt_v3.tradesStorage.MerchantTrade;
+import me.t0c.cwt_v3.tradestorage.MerchantTrade;
 import me.t0c.cwt_v3.utils.StringParser;
 import me.t0c.cwt_v3.utils.traders.CategoryGenerator;
 import org.bukkit.Bukkit;
@@ -22,8 +22,8 @@ public class EditValueInventory implements Listener {
     private final EditTradeInventory editTradeInventory;
     private final MerchantTrade merchantTrade;
 
-    private Inventory inventory;
-    private TradeValues tradeValues;
+    private final Inventory inventory;
+    private final TradeValues tradeValues;
 
     public EditValueInventory(EditTradeInventory editTradeInventory, MerchantTrade merchantTrade, TradeValues tradeValues) {
         this.tradeValues = tradeValues;

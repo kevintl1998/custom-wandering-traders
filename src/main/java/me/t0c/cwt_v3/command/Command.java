@@ -1,4 +1,4 @@
-package me.t0c.cwt_v3.commands;
+package me.t0c.cwt_v3.command;
 
 import org.bukkit.entity.Player;
 

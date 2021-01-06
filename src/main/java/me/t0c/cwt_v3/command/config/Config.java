@@ -1,6 +1,6 @@
-package me.t0c.cwt_v3.commands.config;
+package me.t0c.cwt_v3.command.config;
 
-import me.t0c.cwt_v3.commands.Command;
+import me.t0c.cwt_v3.command.Command;
 import me.t0c.cwt_v3.utils.MessageUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;

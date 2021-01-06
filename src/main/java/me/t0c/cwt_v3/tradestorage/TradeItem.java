@@ -1,4 +1,4 @@
-package me.t0c.cwt_v3.tradesStorage;
+package me.t0c.cwt_v3.tradestorage;
 
 import lombok.Data;
 import net.minecraft.server.v1_16_R3.MojangsonParser;

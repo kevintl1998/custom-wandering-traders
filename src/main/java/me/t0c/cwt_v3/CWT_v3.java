@@ -1,12 +1,12 @@
 package me.t0c.cwt_v3;
 
-import me.t0c.cwt_v3.bukkitRunnables.BukkitRunnableCollection;
-import me.t0c.cwt_v3.commands.CWTCommand;
+import me.t0c.cwt_v3.bukkitrunnables.BukkitRunnableCollection;
+import me.t0c.cwt_v3.command.CWTCommand;
 import me.t0c.cwt_v3.config.Config;
 import me.t0c.cwt_v3.config.tradeFilesHandler.TradeFiles;
 import me.t0c.cwt_v3.listeners.TraderLlamaListener;
 import me.t0c.cwt_v3.listeners.WanderingTraderListener;
-import me.t0c.cwt_v3.tradesStorage.*;
+import me.t0c.cwt_v3.tradestorage.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.*;

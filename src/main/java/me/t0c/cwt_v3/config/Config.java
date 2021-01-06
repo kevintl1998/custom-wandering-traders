@@ -119,8 +119,8 @@ public class Config {
             Config.plugin.getLogger().warning("Error in config file: mixedTraderMaxTrades must be greater than/equal to mixedTraderMinTrades.");
         }
 
-        // despawn timer    || keeping this here just in case I want to change the hard cap
-        if(despawnTimer < 1 || despawnTimer > DESPAWN_TIMER_HARD_CAP) {
+        // despawn timer
+        if(despawnTimer < -1) {
 
             despawnTimer = DESPAWN_TIMER_DEFAULT;
 
@@ -253,13 +253,13 @@ public class Config {
         return false;
     }
     public static boolean setPreventDuplicateTrades(String stringValue) {
-        if (stringValue.toLowerCase().equals("true")) {
+        if (stringValue.equalsIgnoreCase("true")) {
             preventDuplicateTrades = true;
             file.set("preventDuplicateTrades", true);
             plugin.saveConfig();
             return true;
 
-        } else if (stringValue.toLowerCase().equals("false")) {
+        } else if (stringValue.equalsIgnoreCase("false")) {
             preventDuplicateTrades = false;
             file.set("preventDuplicateTrades", false);
             plugin.saveConfig();
@@ -269,13 +269,13 @@ public class Config {
     }
 
     public static boolean setRemoveLlamasOnTraderDespawn(String stringValue) {
-        if (stringValue.toLowerCase().equals("true")) {
+        if (stringValue.equalsIgnoreCase("true")) {
             removeLlamasOnTraderDespawn = true;
             file.set("removeLlamasOnTraderDespawn", true);
             plugin.saveConfig();
             return true;
 
-        } else if (stringValue.toLowerCase().equals("false")) {
+        } else if (stringValue.equalsIgnoreCase("false")) {
             removeLlamasOnTraderDespawn = false;
             file.set("removeLlamasOnTraderDespawn", false);
             plugin.saveConfig();
@@ -285,13 +285,13 @@ public class Config {
     }
 
     public static boolean setBroadcastTraderSpawn(String stringValue) {
-        if (stringValue.toLowerCase().equals("true")) {
+        if (stringValue.equalsIgnoreCase("true")) {
             broadcastTraderSpawn = true;
             file.set("broadcastTraderSpawn", true);
             plugin.saveConfig();
             return true;
 
-        } else if (stringValue.toLowerCase().equals("false")) {
+        } else if (stringValue.equalsIgnoreCase("false")) {
             broadcastTraderSpawn = false;
             file.set("broadcastTraderSpawn", false);
             plugin.saveConfig();
@@ -301,13 +301,13 @@ public class Config {
     }
 
     public static boolean setLeakTraderCoords(String stringValue) {
-        if (stringValue.toLowerCase().equals("true")) {
+        if (stringValue.equalsIgnoreCase("true")) {
             leakTraderCoords = true;
             file.set("leakTraderCoords", true);
             plugin.saveConfig();
             return true;
 
-        } else if (stringValue.toLowerCase().equals("false")) {
+        } else if (stringValue.equalsIgnoreCase("false")) {
             leakTraderCoords = false;
             file.set("leakTraderCoords", false);
             plugin.saveConfig();
@@ -317,13 +317,13 @@ public class Config {
     }
 
     public static boolean setMixTraderCategories(String stringValue) {
-        if (stringValue.toLowerCase().equals("true")) {
+        if (stringValue.equalsIgnoreCase("true")) {
             mixTraderCategories = true;
             file.set("mixTraderCategories", true);
             plugin.saveConfig();
             return true;
 
-        } else if (stringValue.toLowerCase().equals("false")) {
+        } else if (stringValue.equalsIgnoreCase("false")) {
             mixTraderCategories = false;
             file.set("mixTraderCategories", false);
             plugin.saveConfig();
@@ -333,7 +333,7 @@ public class Config {
     }
 
     public static boolean setKeepDefaultTrades(String stringValue) {
-        if(stringValue.toLowerCase().equals("true")) {
+        if(stringValue.equalsIgnoreCase("true")) {
             keepDefaultTrades = true;
             file.set("keepDefaultTrades", true);
             plugin.saveConfig();
@@ -349,7 +349,7 @@ public class Config {
     }
 
     public static boolean setCombineDefaultAndCustom(String stringValue) {
-        if(stringValue.toLowerCase().equals("true")) {
+        if(stringValue.equalsIgnoreCase("true")) {
             combineDefaultAndCustom = true;
             file.set("combineDefaultAndCustom", true);
             plugin.saveConfig();
@@ -378,7 +378,7 @@ public class Config {
     }
 
     public static boolean setAppendDefaultOrCustom(String stringValue) {
-        if(stringValue.toLowerCase().equals("default") || stringValue.toLowerCase().equals("custom")) {
+        if(stringValue.equalsIgnoreCase("default") || stringValue.equalsIgnoreCase("custom")) {
             appendDefaultOrCustom = stringValue.toLowerCase();
             file.set("appendDefaultOrCustom", appendDefaultOrCustom);
             return true;

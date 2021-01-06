@@ -1,9 +1,9 @@
-package me.t0c.cwt_v3.commands.editTrades.inventories;
+package me.t0c.cwt_v3.command.editTrades.inventories;
 
-import me.t0c.cwt_v3.commands.editTrades.enumerations.TradeValues;
+import me.t0c.cwt_v3.command.editTrades.TradeValues;
 import me.t0c.cwt_v3.CWT_v3;
-import me.t0c.cwt_v3.tradesStorage.MerchantTrade;
-import me.t0c.cwt_v3.tradesStorage.TradeItem;
+import me.t0c.cwt_v3.tradestorage.MerchantTrade;
+import me.t0c.cwt_v3.tradestorage.TradeItem;
 import me.t0c.cwt_v3.utils.MessageUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

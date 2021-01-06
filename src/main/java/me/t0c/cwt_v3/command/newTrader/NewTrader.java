@@ -1,6 +1,6 @@
-package me.t0c.cwt_v3.commands.newTrader;
+package me.t0c.cwt_v3.command.newTrader;
 
-import me.t0c.cwt_v3.commands.Command;
+import me.t0c.cwt_v3.command.Command;
 import me.t0c.cwt_v3.utils.MessageUtils;
 import me.t0c.cwt_v3.utils.StringParser;
 import org.bukkit.Location;

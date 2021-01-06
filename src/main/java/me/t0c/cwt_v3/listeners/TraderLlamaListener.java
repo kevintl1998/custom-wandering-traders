@@ -1,7 +1,7 @@
 package me.t0c.cwt_v3.listeners;
 
 import me.t0c.cwt_v3.CWT_v3;
-import me.t0c.cwt_v3.bukkitRunnables.DespawnTimer;
+import me.t0c.cwt_v3.bukkitrunnables.DespawnTimer;
 import me.t0c.cwt_v3.config.Config;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;

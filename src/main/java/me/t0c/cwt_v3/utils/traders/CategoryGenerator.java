@@ -1,20 +1,17 @@
 package me.t0c.cwt_v3.utils.traders;
 
 import me.t0c.cwt_v3.CWT_v3;
-import me.t0c.cwt_v3.config.Config;
-import me.t0c.cwt_v3.tradesStorage.Category;
-import me.t0c.cwt_v3.tradesStorage.CategoryTrades;
-import me.t0c.cwt_v3.tradesStorage.Trades;
+import me.t0c.cwt_v3.tradestorage.Category;
+import me.t0c.cwt_v3.tradestorage.CategoryTrades;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class CategoryGenerator {
 
     public CategoryGenerator() { }
 
-    // Guaranteed to return an object Category that has trades
+    // Guaranteed to return an Category that has trades
     public Category getRandomCategory() {
         if(CWT_v3.trades.areAllCategoriesEmpty()) return null;
 
